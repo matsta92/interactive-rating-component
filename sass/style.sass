@@ -7,14 +7,147 @@
     box-sizing: border-box
     
 .attribution 
+    position: absolute
+    bottom: 10px
     font-size: 11px
     text-align: center
     
 
 .attribution a 
     color: hsl(228, 45%, 44%)
+
+.hide
+    display: none
     
 body
+    display: flex
+    justify-content: center
+    align-items: center
     background-color: $very-dark-blue
     font-size: 15px
     font-family: 'Overpass', sans-serif
+    width: 100%
+    height: 100vh
+    color: $light-grey
+
+.rating-component, .summary-component
+    padding: 35px
+    width: 400px
+    height: 400px
+    background-color: $dark-blue
+    border-radius: 30px
+
+.title
+    color: $white
+    font-size: 28px
+
+.rating-component .title
+    margin-top: 30px
+
+.information
+    margin-top: 10px
+
+.rating
+    display: flex
+    justify-content: space-between
+    margin-top: 25px
+
+.circle, .rate
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: $medium-grey2
+    transition: .3s background-color, .3s color
+    cursor: pointer
+
+.rate:hover
+    background-color: $medium-grey
+    color: $white
+
+.rate:focus
+    background-color: $orange
+    color: $white
+
+.btn-submit
+    margin-top: 30px
+    border: none
+    background-color: $orange
+    color: white
+    text-transform: uppercase
+    width: 100%
+    height: 45px
+    font-weight: bold
+    letter-spacing: 2px
+    border-radius: 24px
+    transition: .3s background-color, .3s color
+    cursor: pointer
+
+.btn-submit:hover
+    background-color: $white
+    color: $orange
+
+.graphics
+    width: 100%
+
+.graphics img
+    margin: 0 auto
+    display: block
+    
+.selected-rate
+    margin: 30px auto 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $medium-grey2
+    color: $orange
+    width: 180px
+    height: 35px
+    border-radius: 25px
+
+.summary-component .title
+    margin-top: 35px
+    text-align: center
+
+.summary-component .information
+    margin-top: 15px
+    text-align: center
+
+@media (max-width: 450px)
+    .rating-component, .summary-component
+        width: 335px
+        height: 335px
+        padding: 20px
+
+    .title
+        font-size: 24px
+
+    .rating-component .title
+        margin-top: 20px
+
+    .information
+        margin-top: 10px
+
+    .rating
+        margin-top: 20px
+
+    .circle, .rate
+        width: 43px
+        height: 43px
+
+    .btn-submit
+        margin-top: 20px
+
+    .graphics img
+        width: 130px
+        
+    .selected-rate
+        margin: 25px auto 0 auto
+
+    .summary-component .title
+        margin-top: 25px
+
+    .summary-component .information
+        margin-top: 15px

@@ -5,6 +5,8 @@
 }
 
 .attribution {
+  position: absolute;
+  bottom: 10px;
   font-size: 11px;
   text-align: center;
 }
@@ -13,8 +15,157 @@
   color: hsl(228, 45%, 44%);
 }
 
+.hide {
+  display: none;
+}
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(216, 12%, 8%);
   font-size: 15px;
   font-family: "Overpass", sans-serif;
+  width: 100%;
+  height: 100vh;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating-component, .summary-component {
+  padding: 35px;
+  width: 400px;
+  height: 400px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 30px;
+}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+}
+
+.rating-component .title {
+  margin-top: 30px;
+}
+
+.information {
+  margin-top: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.circle, .rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: hsl(214, 17%, 22%);
+  transition: 0.3s background-color, 0.3s color;
+  cursor: pointer;
+}
+
+.rate:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rate:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-submit {
+  margin-top: 30px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  height: 45px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 24px;
+  transition: 0.3s background-color, 0.3s color;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.graphics {
+  width: 100%;
+}
+
+.graphics img {
+  margin: 0 auto;
+  display: block;
+}
+
+.selected-rate {
+  margin: 30px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(214, 17%, 22%);
+  color: hsl(25, 97%, 53%);
+  width: 180px;
+  height: 35px;
+  border-radius: 25px;
+}
+
+.summary-component .title {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.summary-component .information {
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .rating-component, .summary-component {
+    width: 335px;
+    height: 335px;
+    padding: 20px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .rating-component .title {
+    margin-top: 20px;
+  }
+  .information {
+    margin-top: 10px;
+  }
+  .rating {
+    margin-top: 20px;
+  }
+  .circle, .rate {
+    width: 43px;
+    height: 43px;
+  }
+  .btn-submit {
+    margin-top: 20px;
+  }
+  .graphics img {
+    width: 130px;
+  }
+  .selected-rate {
+    margin: 25px auto 0 auto;
+  }
+  .summary-component .title {
+    margin-top: 25px;
+  }
+  .summary-component .information {
+    margin-top: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
