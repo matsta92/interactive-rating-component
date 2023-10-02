@@ -5,8 +5,6 @@
 }
 
 .attribution {
-  position: absolute;
-  bottom: 10px;
   font-size: 11px;
   text-align: center;
 }
@@ -20,15 +18,18 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: hsl(216, 12%, 8%);
   font-size: 15px;
   font-family: "Overpass", sans-serif;
+  color: hsl(217, 12%, 63%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100vh;
-  color: hsl(217, 12%, 63%);
 }
 
 .rating-component, .summary-component {
@@ -36,6 +37,7 @@ body {
   width: 400px;
   height: 400px;
   background-color: hsl(213, 19%, 18%);
+  background: linear;
   border-radius: 30px;
 }
 

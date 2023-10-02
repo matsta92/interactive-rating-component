@@ -13,29 +13,31 @@
 </head>
 
 <body>
-  <main class="rating-component">
-    <div class="circle"><img class="star" src="./images/icon-star.svg" alt="star"></div>
-    <h1 class="title">How did we do?</h1>
-    <p class="information">Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!</p>
-    <section class="rating">
-      <div class="rate" id="rate-1" tabindex="0" onclick="rating(1)">1</div>
-      <div class="rate" id="rate-2" tabindex="0" onclick="rating(2)">2</div>
-      <div class="rate" id="rate-3" tabindex="0" onclick="rating(3)">3</div>
-      <div class="rate" id="rate-4" tabindex="0" onclick="rating(4)">4</div>
-      <div class="rate" id="rate-5" tabindex="0" onclick="rating(5)">5</div>
+  <main>
+    <section class="rating-component">
+      <div class="circle"><img class="star" src="./images/icon-star.svg" alt="star"></div>
+      <h1 class="title">How did we do?</h1>
+      <p class="information">Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <section class="rating">
+        <div class="rate" id="rate-1" tabindex="0" onclick="rating(1)">1</div>
+        <div class="rate" id="rate-2" tabindex="0" onclick="rating(2)">2</div>
+        <div class="rate" id="rate-3" tabindex="0" onclick="rating(3)">3</div>
+        <div class="rate" id="rate-4" tabindex="0" onclick="rating(4)">4</div>
+        <div class="rate" id="rate-5" tabindex="0" onclick="rating(5)">5</div>
+      </section>
+      <button class="btn-submit">Submit</button>
     </section>
-    <button class="btn-submit">Submit</button>
-  </main>
 
-  <main class="summary-component hide">
-    <picture class="graphics"><img src="./images/illustration-thank-you.svg" alt="Ilustration: Thank You"></picture>
-    <div class="selected-rate">
-      <p>You selected <span class="user-choice"></span> out of 5</p>
-    </div>
-    <h1 class="title">Thank you!</h1>
-    <p class="information">We appreciate you taking the time to give a rating. If you ever need more support,
-      don’t hesitate to get in touch!</p>
+    <section class="summary-component hide">
+      <picture class="graphics"><img src="./images/illustration-thank-you.svg" alt="Ilustration: Thank You"></picture>
+      <div class="selected-rate">
+        <p>You selected <span class="user-choice"></span> out of 5</p>
+      </div>
+      <h1 class="title">Thank you!</h1>
+      <p class="information">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </section>
   </main>
 
   <footer class="attribution">

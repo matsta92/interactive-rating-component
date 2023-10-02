@@ -7,8 +7,6 @@
     box-sizing: border-box
     
 .attribution 
-    position: absolute
-    bottom: 10px
     font-size: 11px
     text-align: center
     
@@ -20,21 +18,25 @@
     display: none
     
 body
-    display: flex
-    justify-content: center
-    align-items: center
+    
     background-color: $very-dark-blue
     font-size: 15px
     font-family: 'Overpass', sans-serif
+    color: $light-grey
+
+main
+    display: flex
+    justify-content: center
+    align-items: center
     width: 100%
     height: 100vh
-    color: $light-grey
 
 .rating-component, .summary-component
     padding: 35px
     width: 400px
     height: 400px
     background-color: $dark-blue
+    background: linear
     border-radius: 30px
 
 .title
